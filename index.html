@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome, <span id="username">User</span>!</h1>
+    </header>
+
+    <div class="container">
+        <div class="profile-section">
+            <div class="profile-img">
+                <img src="images/default-profile.jpg" alt="Default Profile Image" id="profile-image">
+            </div>
+            <form id="edit-profile-form">
+                <label for="username-input">Username:</label>
+                <input type="text" id="username-input" placeholder="Enter your username">
+                
+                <label for="email-input">Email:</label>
+                <input type="email" id="email-input" placeholder="Enter your email">
+
+                <label for="profile-image-input">Profile Image:</label>
+                <input type="file" id="profile-image-input">
+
+                <button type="submit">Update Profile</button>
+            </form>
+        </div>
+
+        <div class="friends-section">
+            <h3>Your Friends</h3>
+            <ul id="friends-list"></ul>
+        </div>
+
+        <div class="chat-section">
+            <h3>Chat</h3>
+            <div class="chat-box" id="chat-box"></div>
+            <form id="chat-form">
+                <textarea id="chat-message" placeholder="Type a message..."></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <button id="logout-button">Logout</button>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
